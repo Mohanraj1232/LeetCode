@@ -1,0 +1,16 @@
+Given a number N and an array of numbers of size K, print "yes" if N can be
+formed by multiplying the powers of the given numbers.
+
+Input:
+75 2
+5 3
+
+Output:
+yes
+
+Input:
+36 3
+2 6 1
+
+Output:
+yes
