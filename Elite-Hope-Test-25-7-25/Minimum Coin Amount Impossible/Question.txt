@@ -1,0 +1,18 @@
+Minimum Coin Amount Impossible
+    A shop keeper has certain coins and he wants to know the minimum amount that he cannot give with these coins. Help him out by completing the program.
+
+Example Input/Output 1:
+Input:
+5
+1 2 10 7 4
+
+Output:
+25
+
+Example Input/Output 2:
+Input:
+5
+1 2 4 7 20
+
+Output:
+15
