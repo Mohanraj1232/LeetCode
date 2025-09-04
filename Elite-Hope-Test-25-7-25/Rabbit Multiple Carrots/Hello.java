@@ -18,6 +18,8 @@ public class Hello {
 		sc.nextLine();
 		
 		char grid[][] = new char[R][C];
+
+		int rR = 0 , rC = 0;
 		
 		Queue<State> queue = new LinkedList<>();
 
@@ -30,6 +32,8 @@ public class Hello {
 		        grid[r][c] = sc.next().charAt(0);
 		        
 		        if(grid[r][c] == 'R') {
+					rR = r;
+					rC = c;
 		            queue.offer(new State(r ,c ,0 ,0));
 		        }else if(grid[r][c] == 'C') {
 					carrot++;
@@ -60,6 +64,7 @@ public class Hello {
 
 						if (grid[nR][nC] == 'C'){
 							newmask |= (1 << (maskmap.get(nR + "," + nC) - 1));
+							queue.offer(new State(rR, rC, cur.moves + 1, newmask));
 						}
 
 						if (newmask == (1 << carrot) - 1) {
