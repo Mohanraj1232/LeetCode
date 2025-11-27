@@ -31,7 +31,7 @@ ll find(ll segment[] ,int idx ,int nodeLeft ,int nodeRight ,int room){
 
 int main(){
     ll n ,Q;
-    cin >> n >> Q;
+    cin >> n >> Q; 
     ll N = getNext2Pow(n);
 
     ll segment[N * 2];
